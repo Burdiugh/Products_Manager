@@ -106,6 +106,11 @@ namespace wf_Multi_forms
             // priceNumeric
             // 
             this.priceNumeric.Location = new System.Drawing.Point(88, 72);
+            this.priceNumeric.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.priceNumeric.Name = "priceNumeric";
             this.priceNumeric.Size = new System.Drawing.Size(204, 20);
             this.priceNumeric.TabIndex = 6;
@@ -127,6 +132,11 @@ namespace wf_Multi_forms
             // valueNumeric
             // 
             this.valueNumeric.Location = new System.Drawing.Point(88, 163);
+            this.valueNumeric.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.valueNumeric.Name = "valueNumeric";
             this.valueNumeric.Size = new System.Drawing.Size(204, 20);
             this.valueNumeric.TabIndex = 8;

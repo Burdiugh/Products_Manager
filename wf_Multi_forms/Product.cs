@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace wf_Multi_forms
 {
+    [Serializable]
     public class Product
     {
         public string Name { get; set; }
