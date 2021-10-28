@@ -30,12 +30,9 @@ namespace wf_Multi_forms
             if (!IsRead)
             {
                 this.nameBox.ReadOnly=true;
-                this.priceNumeric.ReadOnly = true;
                 this.priceNumeric.Enabled = false;
                 this.countryBox.Enabled = false;
-                this.valueNumeric.ReadOnly = true;
                 this.valueNumeric.Enabled = false;
-                this.discountNUmeric.ReadOnly = true;
                 this.discountNUmeric.Enabled = false;
             }
         }
