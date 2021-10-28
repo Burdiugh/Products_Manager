@@ -26,7 +26,7 @@ namespace wf_Multi_forms
         private void AddBtn_Click(object sender, EventArgs e)
         {
             Product product = new Product();
-            ProductInfo productInfo = new ProductInfo(product, false);
+            ProductInfo productInfo = new ProductInfo(product, true);
             if (productInfo.ShowDialog() == DialogResult.OK)
             {
                 products.Add(product);
@@ -51,7 +51,7 @@ namespace wf_Multi_forms
         private void EditBtn_Click(object sender, EventArgs e)
         {
             Product product = this.productsList.SelectedItem as Product;
-            ProductInfo productInfo = new ProductInfo(product,false);
+            ProductInfo productInfo = new ProductInfo(product,true);
             if (productInfo.ShowDialog() == DialogResult.OK)
             {
                 Update();
@@ -62,7 +62,7 @@ namespace wf_Multi_forms
         private void ShowBtn_Click(object sender, EventArgs e)
         {
             Product product = this.productsList.SelectedItem as Product;
-            ProductInfo productInfo = new ProductInfo(product, true);
+            ProductInfo productInfo = new ProductInfo(product, false);
             productInfo.ShowDialog();
         }
 
